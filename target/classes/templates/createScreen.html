@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!doctype html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Create User</title>
+
+  </head>
+  <body>
+    
+    <h1 style="text-align: center">CREATE USER</h1>
+
+    <form action="#" th:action="@{/users/add}" th:object="${UserDummyRequest}" method="post" name="myForm" >
+      <div class="mb-3">
+        <label for="nama" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama" th:field="*{name}" >
+      </div>
+      
+      <div class="mb-3">
+        <label for="hp" class="form-label">Hp</label>
+        <input type="number" class="form-control" id="hp" name="hp" placeholder="Hp" th:field="*{hp}">
+      </div>
+      
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="text" class="form-control" id="email" placeholder="Email"  name="email" th:field="*{email}">
+      </div>
+      
+      <div class="mb-3">
+        <label for="alamat" class="form-label">Alamat</label>
+        <input type="text" class="form-control" id="email" placeholder="Alamat"  name="alamat" th:field="*{alamat}">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Save</button>
+
+      <input type="radio" class="btn-check" name="back" id="back" autocomplete="off">
+      <label class="btn btn-outline-primary" for="back"><a href="/users/list">BACK</a></label>
+    </form>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+  </body>
+</html>

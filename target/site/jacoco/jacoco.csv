@@ -1,0 +1,10 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+spring-boot-crud-example,com.example.springbootcrud.controller,UserController,85,0,2,0,22,0,6,0,5,0
+spring-boot-crud-example,com.example.springbootcrud.entity,User,256,0,40,0,8,0,36,0,16,0
+spring-boot-crud-example,com.example.springbootcrud.entity,News,239,0,34,0,8,0,33,0,16,0
+spring-boot-crud-example,com.example.springbootcrud.service,UserServiceImpl,159,0,4,0,40,0,6,0,4,0
+spring-boot-crud-example,com.example.springbootcrud,SpringBootCrudExampleApplication,8,0,0,0,3,0,2,0,2,0
+spring-boot-crud-example,com.example.springbootcrud.dto,ListUserDummyResponse,89,0,14,0,5,0,15,0,8,0
+spring-boot-crud-example,com.example.springbootcrud.dto,UserDummyResponse,227,0,38,0,8,0,33,0,14,0
+spring-boot-crud-example,com.example.springbootcrud.dto,UserDummyRequest,227,0,38,0,8,0,33,0,14,0
+spring-boot-crud-example,com.example.springbootcrud.dto,UserDummyNameRequest,89,0,14,0,5,0,15,0,8,0

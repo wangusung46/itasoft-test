@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!doctype html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"/>
+
+    <title>User List</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">List User</h1>
+
+        <form action="#" th:action="@{/users/list/search}" th:object="${UserDummyNameRequest}" method="post" name="myForm" >
+          <input type="text" class="form-control" id="name" name="name" placeholder="Nama" th:field="*{name}" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Nama</th>
+          <th scope="col">Email</th>
+          <th scope="col">HP</th>
+          <th scope="col">Alamat</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="user : ${ListUserDummyResponse}">
+          <td th:text="${user.name}"></td>
+          <td th:text="${user.email}"></td>
+          <td th:text="${user.hp}"></td>
+          <td th:text="${user.alamat}"></td>
+          <td ><a th:href="@{'/users/delete/' + ${user.id}}">Delete</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button type="submit"><a href="/users/add">Add</a></button>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  </body>
+</html>

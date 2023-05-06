@@ -1,0 +1,11 @@
+com\example\springbootcrud\controller\UserController.class
+com\example\springbootcrud\service\UserServiceImpl.class
+com\example\springbootcrud\entity\News.class
+com\example\springbootcrud\dto\UserDummyRequest.class
+com\example\springbootcrud\entity\User.class
+com\example\springbootcrud\dto\ListUserDummyResponse.class
+com\example\springbootcrud\repository\UserRepository.class
+com\example\springbootcrud\dto\UserDummyNameRequest.class
+com\example\springbootcrud\dto\UserDummyResponse.class
+com\example\springbootcrud\service\UserService.class
+com\example\springbootcrud\SpringBootCrudExampleApplication.class
